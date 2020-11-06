@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<style type="text/css">
+	*{
+
+		margin: 0;
+		padding: 0;
+		background-color:white;
+		font-family: 'josefin-sans',sans-serif;
+
+
+	}
+
+	.Box{
+
+	width: 400px;
+	height:200px;
+	border:2px solid grey;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	padding: 10px;
+	/*background:rgba(0,0,0,.8);*/
+	background-color:transparent;
+	border-radius: 5px;
+
+
+	}
+	.Box header{
+		text-align: center;
+		margin-bottom: 20px;
+		font-size: 18px;
+		margin-top: 0px;
+		
+	}
+
+	.Box input{
+		margin-left:30PX;
+
+		
+	}
+
+
+	
+	.Box h4{
+		margin-left:30PX;
+		font-size:25px;
+		padding: 0;
+		color: grey;
+		}
+	.Box h5{
+		margin-left:30PX;
+		font-size:20px;
+		padding: 0;
+		color: grey;
+		}
+
+
+
+</style>
+<head>
+	<title>Weather</title>
+</head>
+<body>
+
+	<div class="Box">
+
+		
+		<header ><u> <b>Weather Information</b> </u> </header>
+		<form action="getinfo" method="get">
+			<!-- Enter Pincode: -->
+			<input type="text" name="pincode" placeholder="Enter Pincode/CityName Here";>
+			<!-- <input type="submit" name="getinfo"> -->
+			<button><b> Submit </b> </button>
+
+			<br> </br>
+
+				
+				<h4>{{Ar}} </h4><br>
+				<h5>{{te}} </h5>
+				<h5>{{cl}} </h5> <br>
+				
+				
+
+
+		</form>
+
+	</div>	
+</body>
+</html>
